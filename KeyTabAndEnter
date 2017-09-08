@@ -1,0 +1,17 @@
+// Select the button that open the window
+(YourWebElement).click();
+//Webdriver wait until all page elements charges
+wait.withTimeout(7, TimeUnit.SECONDS);
+//Create an instance of the robot class
+Robot robot = new Robot();
+// loop to select the desired element
+for (int tab = 0; tab < 12; tab++) {
+// Press Tab
+robot.keyPress(KeyEvent.VK_TAB);
+// Release Tab
+robot.keyRelease(KeyEvent.VK_TAB);
+}
+// Press Enter
+robot.keyPress(KeyEvent.VK_ENTER);
+// Release Enter
+robot.keyRelease(KeyEvent.VK_ENTER);
